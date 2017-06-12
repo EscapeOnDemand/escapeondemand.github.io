@@ -1,0 +1,141 @@
+####################
+# Where things are
+####################
+# destination: ./_site
+# plugins_dir: _plugins
+# layouts_dir: _layouts
+# data_dir: _data
+# includes_dir: _includes
+collections:
+  posts:
+    output: true
+  rooms:
+    output: true
+
+
+####################
+# Handling Reading
+####################
+include:
+  - "_pages"
+exclude:
+  - "node_modules"
+  - "vendor"
+  - "*.sublime-project"
+  - "*.sublime-workspace"
+  - "Gemfile"
+  - "Gemfile.lock"
+  - "gulpfile.js"
+  - "package.json"
+  - "LICENSE.md"
+  - "README.md"
+  - "yarn.lock"
+
+
+####################
+# Filtering Content
+####################
+# show_drafts: null
+# limit_posts: 10
+# future: false
+# unpublished: false
+
+
+####################
+# Plugins
+####################
+# whitelist: []
+gems:
+  - jekyll-seo-tag
+  - jekyll-feed
+  - jekyll-sitemap
+
+
+####################
+# Conversion
+####################
+# markdown: kramdown
+# excerpt_separator: "\n\n"
+
+
+####################
+# Serving
+####################
+# detach: false
+# port: 4000
+# host: 127.0.0.1
+# baseurl: ""
+# show_dir_listing: false
+url: https://escapeondemand.com
+enforce_ssl: escapeondemand.com
+
+
+####################
+# Outputting
+####################
+permalink: ":categories/:title/"
+# paginate_path: /page:num
+timezone: "America/Los_Angeles"
+verbose: false
+defaults:
+  -
+    scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: article
+  -
+    scope:
+      path: "_pages"
+      scope: "pages"
+    values:
+      layout: "page"
+  -
+    scope:
+      path: "_rooms"
+      type: "rooms"
+    values:
+      layout: "room"
+
+
+####################
+# Markdown Processor
+####################
+kramdown:
+  syntax_highlighter: rouge
+
+
+####################
+# Other
+####################
+
+# Liquid profiler - Generate a Liquid rendering profile to help you identify performance bottlenecks.
+profile: false
+
+# Custom vars
+locale: "en-US"
+title: "Escape On Demand"
+description: "Escape On Demand"
+categories_path: categories.html
+tags_path: tags.html
+rss_path: atom.xml
+
+
+####################
+# Personal Information
+####################
+
+author: "Escape On Demand, LLC"
+logo: "/assets/img/escape-on-demand.png"
+
+# Contact
+email: "njessen@escapeondemand.com"
+location: "Las Vegas, NV"
+
+# Google Analytics
+# ga_domain: escapeondemand.github.io
+# ga_tracking_id: UA-xx
+
+# Social
+linkedin:
+  username: "escapeondemand"

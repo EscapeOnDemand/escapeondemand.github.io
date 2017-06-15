@@ -115,7 +115,7 @@ profile: false
 # Custom vars
 locale: "en-US"
 title: "Escape On Demand"
-description: "Escape On Demand"
+description: "Escape room games for corporate team building events in Las Vegas, Nevada"
 categories_path: categories.html
 tags_path: tags.html
 rss_path: atom.xml
@@ -126,7 +126,7 @@ rss_path: atom.xml
 ####################
 
 author: "Escape On Demand, LLC"
-logo: "/assets/img/escape-on-demand.png"
+logo: "/assets/img/escape-on-demand@2x.png"
 
 # Contact
 email: "njessen@escapeondemand.com"

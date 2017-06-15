@@ -5,11 +5,11 @@
 }
 
 .b--orange {
-  border-color: #F47C20;
+  border-color: #fd7e14;
 }
 
 .bg-orange {
-  background-color: #F47C20;
+  background-color: #fd7e14;
 }
 
 @media only screen and (min-width: 60em) {
@@ -20,6 +20,10 @@
 
 .transition {
   transition: all 0.5s;
+}
+
+.w-logo {
+  width: 12rem;
 }
 
 .h10 {

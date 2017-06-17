@@ -8,11 +8,43 @@
   font-family: 'Raleway';
 }
 
-.b--orange {
+.primary {
+  color: var(--blue);
+}
+
+.hover-primary:hover {
+  color: var(--blue);
+}
+
+.b--primary {
+  border-color: var(--blue);
+}
+
+.bg-primary {
+  background-color: var(--blue);
+}
+
+.hover-bg-primary:hover {
+  background-color: var(--blue);
+}
+
+.secondary {
+  color: var(--orange);
+}
+
+.hover-secondary:hover {
+  color: var(--orange);
+}
+
+.b--secondary {
   border-color: var(--orange);
 }
 
-.bg-orange {
+.bg-secondary {
+  background-color: var(--orange);
+}
+
+.hover-bg-secondary:hover {
   background-color: var(--orange);
 }
 

@@ -13,6 +13,30 @@ layout: default
 
 <section class="pv5">
   <div class="container-fluid">
-    {{ content }}
+    <div class="row">
+      <div class="col-xs-12 col-sm-8">
+        <div class="pr5 lh-copy">
+          <h3>Storyline</h3>
+          <div>{{ content }}</div>
+        </div>
+      </div>
+
+      <div class="col-xs-12 col-sm-4">
+        <div class="lh-copy">
+          <h3>Other Escape Rooms</h3>
+          <ul class="list pl0">
+            {% for room in site.rooms reversed %}
+              {% if page.url != room.url %}
+              <li class="mb2">
+                <a class="dib link lh-copy near-black hover-secondary" href="{{ room.url }}">{{ room.title }}</a>
+              </li>
+              {% endif %}
+            {% endfor %}
+          </ul>
+        </div>
+      </div>
+    </div>
   </div>
 </section>
+
+{% include cta.html %}

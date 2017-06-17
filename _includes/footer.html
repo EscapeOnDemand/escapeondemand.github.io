@@ -1,11 +1,17 @@
-<footer class="bg-near-black white pv4" role="contentinfo">
+<footer class="pv4 f6 lh-copy bg-white" role="contentinfo">
   <div class="container-fluid">
-    <p class="f6 lh-copy mv0">
-      Escape On Demand<br>
-      (702) 555-5555<br>
-      <a href="mailto:events@escapeondemand.com" class="link white">events@escapeondemand.com</a>
+    <p class="mv0">
+      <a href="{{ site.baseurl }}/" class="dib w4" title="Back to Homepage">
+        <img src="{{ site.logo }}" class="img-responsive" alt="Escape On Demand logo">
+        <span class="dn link white-90 hover-white">Escape On Demand</span>
+      </a>
     </p>
 
-    <p class="f6 lh-copy mv0">&copy; {{ site.time | date: '%Y' }} {{ site.author }}</p>
+    <p class="mt1 mb0 mid-gray">(702) 555-5555</p>
+    <p class="mv0">
+      <a href="mailto:events@escapeondemand.com" class="link mid-gray hover-secondary">events@escapeondemand.com</a>
+    </p>
+
+    <p class="mv0 mid-gray">&copy; {{ site.time | date: '%Y' }} {{ site.author }}</p>
   </div>
 </footer>

@@ -5,7 +5,7 @@
     {% for room in site.rooms reversed %}
       <li class="col-xs-12 col-sm-6 mb3">
         <!-- {{ room.attribution }} -->
-        <div class="h-100 overflow-hidden room cover bg-near-black {% cycle 'room--odd', 'room--even' %}" style="background-image: url({{ site.base_url }}/assets/img/{{ room.image }})">
+        <div class="h-100 overflow-hidden room cover bg-near-black {% cycle 'room--odd', 'room--even' %}" style="background-image: url({{ site.base_url }}/assets/img/rooms/{{ room.image }})">
           <div class="h-100 pv5 ph5 bg-black-40">
             <h2 class="mt0 f5 lh-copy white">{{ room.teaser }}</h2>
             <h3 class="f2 lh-solid mt3 mb4 white">{{ room.title }}</h3>

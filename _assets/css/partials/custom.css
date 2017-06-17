@@ -1,4 +1,8 @@
 /** Misc */
+:root {
+  --blue: #2a3649;
+  --orange: #fd7e14;
+}
 
 .has-webfonts-loaded body {
   font-family: 'Raleway';
@@ -20,10 +24,6 @@
 
 .transition {
   transition: all 0.5s;
-}
-
-.w-logo {
-  width: 12rem;
 }
 
 .h10 {

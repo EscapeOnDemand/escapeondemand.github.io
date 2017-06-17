@@ -1,15 +1,12 @@
 {
   "name": "EscapeOnDemand",
+  "version": "1.0.0",
   "description": "Public facing website for Escape On Demand",
-  "author": "Nathan Jessen",
-  "version": "0.0.1",
-  "homepage": "https://escapeondemand.github.io",
-  "main": "js",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/EscapeOnDemand/escapeondemand.github.io.git"
-  },
+  "main": "index.js",
+  "repository": "https://github.com/EscapeOnDemand/escapeondemand.github.io.git",
+  "author": "nathanjessen <nathan.jessen@gmail.com>",
   "license": "The MIT License (MIT)",
+  "homepage": "http://escapeondemand.com",
   "scripts": {
     "refresh": "rimraf node_modules && yarn",
     "start": "gulp preview",

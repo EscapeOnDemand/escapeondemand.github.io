@@ -11,4 +11,7 @@
 
 /*! Main CSS */
 /** Components */
+@import "partials/settings.css";
+@import "partials/theme.css";
 @import "partials/custom.css";
+@import "partials/utilities.css";

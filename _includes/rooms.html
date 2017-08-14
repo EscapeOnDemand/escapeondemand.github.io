@@ -1,17 +1,19 @@
-<div class="container-fluid pv5">
-  <h2 class="f1 lh-title mt0 tc">Our Escape Rooms.</h2>
+<div class="bg-near-white">
+  <div class="container-fluid pv5">
+    <h2 class="f1 lh-title mt0 tc">Our Escape Rooms.</h2>
 
-  <ul class="list pl0 row">
-    {% for room in site.rooms reversed %}
-      <li class="col-xs-12 col-sm-6 mb3">
-        <!-- {{ room.attribution }} -->
-        <div class="h5 overflow-hidden room cover bg-near-black {% cycle 'room--odd', 'room--even' %}" style="background-image: url({{ site.base_url }}/assets/img/rooms/{{ room.image }})">
-          <div class="h-100 pv5 ph5 bg-black-40">
-            <h2 class="f2 lh-solid mt3 mb4 white">{{ room.title }}</h2>
-            <p class="white mv0"><a class="dib link lh-copy ba b--white pv2 ph3 white bg-animate hover-near-black hover-bg-white" href="{{ room.url }}">View room info</a></p>
+    <ul class="list pl0 row">
+      {% for room in site.rooms reversed %}
+        <li class="col-xs-12 col-sm-6 mb3">
+          <!-- {{ room.attribution }} -->
+          <div class="h5 overflow-hidden room cover bg-near-black {% cycle 'room--odd', 'room--even' %}" style="background-image: url({{ site.base_url }}/assets/img/rooms/{{ room.image }})">
+            <div class="h-100 pv5 ph5 bg-black-40">
+              <h2 class="f2 lh-solid mt3 mb4 white">{{ room.title }}</h2>
+              <p class="white mv0"><a class="dib link lh-copy ba b--white pv2 ph3 white bg-animate hover-near-black hover-bg-white" href="{{ room.url }}">View room info</a></p>
+            </div>
           </div>
-        </div>
-      </li>
-    {% endfor %}
-  </ul>
+        </li>
+      {% endfor %}
+    </ul>
+  </div>
 </div>
